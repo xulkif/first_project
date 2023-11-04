@@ -1,12 +1,12 @@
 public class Person {
 
-    private int id;
+      int id;
 
-    private String name;
+     String name;
 
-    private int age;
+     int age;
 
-    private boolean parent_permission;
+   boolean parent_permission;
 
 
     public Person(String name, int age, boolean parent_permission) {
