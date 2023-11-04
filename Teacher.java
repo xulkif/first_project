@@ -1,7 +1,6 @@
-public class Teacher extends Person {
+ public class Teacher extends Person {
 
     private String specialization;
-
 
     public Teacher(String name, int age, boolean parent_permission, String specialization) {
 
@@ -11,11 +10,9 @@ public class Teacher extends Person {
 
     }
 
-
     public String getSpecialization() {
 
         return specialization;
-
 
     }
 }
