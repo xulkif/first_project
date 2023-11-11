@@ -1,1 +1,1 @@
-to initialize development branch
+for initialize development branch
