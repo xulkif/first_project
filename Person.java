@@ -1,5 +1,14 @@
-public class Person {
+public class Person implements Nameable  {
 
+ 
+    int id;
+
+    String name;
+
+    int age;
+
+    boolean parent_permission;
+ 
       int id;
 
      String name;
@@ -7,6 +16,7 @@ public class Person {
      int age;
 
    boolean parent_permission;
+ 
 
 
     public Person(String name, int age, boolean parent_permission) {
@@ -21,12 +31,18 @@ public class Person {
 
     }
 
+    /*public Person(int id, int age, boolean parentPermission) {
+        this(id, "Unknown", age, parentPermission);
+    }
 
+    public Person(int id, int age) {
+        this(id, "Unknown", age, true);
+    }
     public int getId() {
 
         return id;
 
-    }
+    }*/
 
 
     public String getName() {
@@ -70,4 +86,9 @@ public class Person {
 
     }
 
+
+    @Override
+    public String correct_name() {
+        return name;
+    }
 }
