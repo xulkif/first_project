@@ -1,3 +1,4 @@
+
 public class TrimmerDecorator extends BaseDecorator {
 
     public TrimmerDecorator(Nameable nameable) {
@@ -13,3 +14,5 @@ public class TrimmerDecorator extends BaseDecorator {
         return name;
     }
 }
+
+

@@ -1,12 +1,25 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class Main {
     public static void main(String[] args) {
-        Person person = new Person("abdi",23,true);
-        System.out.println(person.correct_name()); // Output: maximilianus
+        Classroom classroom = new Classroom("Math");
+        Student student1 = new Student("John", 18, true);
+        Student student2 = new Student("Alice", 17, false);
 
-        CapitalizeDecorator capitalizedPerson = new CapitalizeDecorator(person);
-        System.out.println(capitalizedPerson.correct_name()); // Output: MAXIMILIANUS
+        classroom.addStudent(student1);
+        classroom.addStudent(student2);
 
-        TrimmerDecorator capitalizedTrimmedPerson = new TrimmerDecorator(capitalizedPerson);
-        System.out.println(capitalizedTrimmedPerson.correct_name()); // Output: MAXIMILIAN
+        List<Student> students = classroom.getStudents();
+        for (Student student : students) {
+            System.out.println(student.getName());
+        }
+
+        Book book = new Book("hello there", "F. mustefa");
+        Person person = new Person("Jselam", 20, false);
+
+        Rental rental = new Rental(book, person);
+        System.out.println(rental.getBook().getTitle());
+        System.out.println(rental.getPerson().getName());
     }
 }

@@ -1,3 +1,4 @@
+
 public abstract class BaseDecorator implements Nameable {
     protected Nameable nameable;
 
